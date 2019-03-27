@@ -5,97 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Entrenammiento-Bits</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
 </head>
-<style type="text/css">
-    table,
-    th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
 
-    th, td {
-        text-align: center;
-        padding: 15px;
-    }
 
-    th {
-        background-color: #82FA58;
+<header>
+    <h1>Entrenammiento-Bits</h1>
+</header>
 
-    }
-
-    header, footer {
-        background-color: white;
-        border-style: solid;
-        border-radius: 10px;
-        padding: 5px;
-        text-align: center;
-        width: auto;
-    }
-</style>
 <body>
+<main>
     <div>
-        <header>
-            <h1>Entrenammiento-Bits </h1>
-        </header>
-        <p>
-        Git es un software de control de versiones pensando en la eficiencia y la confiabilidad del mantenimiento  de versiones de aplicaciones cuando estas tienen un gran numero de archivos de codigo fuente.
-        Su trabajo es llevar registro de los cambios en archivos de comptadora y coodinar el trabaajo que varias personas realizan sobre archivos compartidos.
-        </p>        
-        <table style="width:auto">
-            <tr>
-                <th>Comando Git</th>
-                <th>Descripciòn</th>
-            </tr>
-            <tr>
-                <td>git clone URL/name.git NombreProyecto</td>
-                <td>Clona un proyecto de git en la carpeta NombreProyecto.</td>
-            </tr>
-            <tr>
-                <td>git help</td>
-                <td>Muestra una lista con los comandos más utilizados en GIT.</td>
-            </tr>
-            <tr>
-                <td>git add -A</td>
-                <td>Agrega al repositorio TODOS los archivos y carpetas que estén en nuestro proyecto, los cuales GIT no
-                    está siguiendo.</td>
-            </tr>
-            <tr>
-                <td>git commit -m "mensaje" + archivos</td>
-                <td>Hace commit a los archivos que indiquemos, de esta manera quedan guardados nuestras modificaciones.</td>
-            </tr>
-            <tr>
-                <td>git checkout -b NombreDeBranch</td>
-                <td>Crea un nuevo branch y automaticamente GIT se cambia al branch creado, clonando el branch desde donde ejecutamos el comando.</td>
-            </tr>
-            <tr>
-                <td>git branch</td>
-                <td>Nos muestra una lista de los branches que existen en nuestro repositorio. </td>
-            </tr>
-            <tr>
-                <td>git checkout NombreDeBranch</td>
-                <td>Sirve para moverse entre branches, en este caso vamos al branch que indicamos en el comando.</td>
-            </tr>
-            <tr>
-                <td>git status</td>
-                <td>Nos indica el estado del repositorio, por ejemplo cuales están modificados, cuales no están siendo seguidos por GIT, entre otras características.</td>
-            </tr>
-            <tr>
-                <td>git push origin NombreDeBranch</td>
-                <td>Luego de que hicimos un git commit, si estamos trabajando remotamente, este comando va a subir los archivos al repositorio remoto, específicamente al branch que indiquemos.</td>
-            </tr>
-            <tr>
-                <td>git pull origin NombreDeBranch</td>
-                <td>Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando</td>
-            </tr>
-        </table>
-        <h1></h1>
-        <footer>
-            <h1 style="text-align: right">
-                Bits Americas.
-            </h1>
-        </footer>
+        <h2></h2>
+        <p class="parr">
+            Git es un software de control de versiones pensando en la eficiencia y la confiabilidad del mantenimiento de
+            versiones de aplicaciones cuando estas tienen un gran numero de archivos de codigo fuente.
+            Su trabajo es llevar registro de los cambios en archivos de comptadora y coodinar el trabaajo que varias
+            personas realizan sobre archivos compartidos.
+        </p>
+        <h2 >git clone</h2>
+        <p >Clona un proyecto de git en la direccion que le asignes y el creara la carpeta, solo debes colocar la url de
+            tu repositorio a continuacion un ejemplo.</p>
+        <div class="codeExaple">
+            <code> git clone https://github.com/bitsrichardherrera/entrenamiento-bits.git</code>
+        </div>
+
+        <h2>Git Help</h2>
+        <p>Muestra una lista con los comandos más utilizados en GIT.</p>
+        <div class="codeExample">
+            <code>git help</code>
+        </div>
+
+        <h2>git add -A</h2>
+        <p>Agrega al repositorio TODOS los archivos y carpetas que estén en nuestro proyecto, los cuales GIT no
+            está siguiendo.</p>
+
+        <h2>git commit -m "mensaje" + archivos</h2>
+        <p>Hace commit a los archivos que indiquemos, de esta manera quedan guardados nuestras modificaciones.</p>
+
+        <h2>git checkout -b NombreDeBranch</h2>
+        <p>Crea un nuevo branch y automaticamente GIT se cambia al branch creado, clonando el branch desde donde
+            ejecutamos el comando.</p>
+
+        <h2>git branch</h2>
+        <p>Nos muestra una lista de los branches que existen en nuestro repositorio. </p>
+
+        <h2>git checkout NombreDeBranch</h2>
+        <p>Sirve para moverse entre branches, en este caso vamos al branch que indicamos en el comando.</p>
+
+        <h2>git status</h2>
+        <p>Nos indica el estado del repositorio, por ejemplo cuales están modificados, cuales no están siendo
+            seguidos por GIT, entre otras características.</p>
+
+        <h2>git push origin NombreDeBranch</h2>
+        <p>Luego de que hicimos un git commit, si estamos trabajando remotamente, este comando va a subir los
+            archivos al repositorio remoto, específicamente al branch que indiquemos.</p>
+
+        <h2>git pull origin NombreDeBranch</h2>
+        <p>Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando</p>
+
+        <h2></h2>
     </div>
+</main>
 </body>
+<footer>
+    <a href="https://www.bitsamericas.com" >Bits Americas.</a>
+    <kbd>Calle 106 a # 54-27</kbd>
+</footer>
+
 
 </html>
