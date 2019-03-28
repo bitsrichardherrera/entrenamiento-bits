@@ -3,14 +3,12 @@
     src: url('roboto-regular-webfont.woff2') format('woff2')
 }
 
-.descri {
-    padding: 15px;
-}   
-
-.parr {
+.parr   {
     background-color: rgba(210, 214, 213, 0.897);
     border-radius: 10px;
     text-align: center;
+    padding: 10px;
+    margin: 0;
 }
 
 h1 {
@@ -21,7 +19,17 @@ h1 {
     width: 400px;
 }
 
-code::before {
+.logo{
+    float: left;
+    text-align: center;
+    margin: auto;
+    height: 60px;
+}
+
+code{
+    color: rgba(47, 47, 235, 0.829);
+}
+.codeExaple::before {
     content:"$ ";
     display: inline;
     background-color: black;
@@ -51,9 +59,7 @@ body{
 header{
     margin: 20px;
 }
-main{
-    margin: 2%;
-}
+
 .context {
     border: 1px;
     border-style: solid;
@@ -73,4 +79,17 @@ footer{
 
 .container{
     padding:25px 0 70px 0;
+    width: 95%;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.hijo{
+   width:auto;
+   height: auto;
+   margin:2px 0;
+   padding: 10px;
+   text-align: left;
 }

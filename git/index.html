@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device, user-scalable= no, initial-scale=1.0, 
+    maximum-scale=1.0, minimum-scale=1.0">
     <title>Entrenammiento-Bits</title>
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
     <link href="fonts/font-face.css" rel="stylesheet" type="text/css">
 </head>
 <header>
+    <div>
+    <img class="logo" src="img/logobits.png" alt="logo">
     <h1>Entrenamiento-Bits</h1>
+    </div>
 </header>
 
 <body>
@@ -20,74 +25,66 @@
                 Git es un software de control de versiones pensando en la eficiencia y la confiabilidad del
                 mantenimiento de
                 versiones de aplicaciones cuando estas tienen un gran numero de archivos de codigo fuente.
-                Su trabajo es llevar registro de los cambios en archivos de comptadora y coodinar el trabaajo que varias
+                Su trabajo es llevar registro de los cambios en archivos de comptadora y coodinar el trabajo que varias
                 personas realizan sobre archivos compartidos.
             </p>
-            <h2>Git clone</h2>
-            <p>Clona un proyecto de git en la direccion que le asignes y el creara la carpeta, solo debes colocar la url
-                de tu repositorio a continuacion un ejemplo.</p>
-            <div class="codeExaple">
-                <code> git clone https://github.com/bitsrichardherrera/entrenamiento-bits.git</code>
+            <div class="hijo">
+                <h2>Git clone</h2>
+                <p>Clona un proyecto de git en la direccion que le asignes y el creara la carpeta, solo debes colocar la
+                    url de tu repositorio a continuacion un ejemplo.</p>
+                <code class="codeExaple"> git clone https://github.com/bitsrichardherrera/entrenamiento-bits.git</code>
             </div>
-
-            <h2>Git Help</h2>
-            <p>Muestra una lista con los comandos más utilizados en GIT.</p>
-            <div class="codeExample">
-                <code>git help</code>
+            <div class="hijo">
+                <h2>Git Help</h2>
+                <p>Muestra una lista con los comandos más utilizados en GIT.</p>
+                <code class="codeExaple">git help</code>
             </div>
-
-            <h2>Git add</h2>
-            <p>Agrega al repositorio TODOS los archivos y carpetas que estén en nuestro proyecto, los cuales GIT no
-                está siguiendo, tambien puedes agregar de 1 a la vez.</p>
-            <div class="codeExample">
-                <code>git add -A</code>
+            <div class="hijo">
+                <h2>Git add</h2>
+                <p>Agrega al repositorio TODOS los archivos y carpetas que estén en nuestro proyecto, los cuales GIT no
+                    está siguiendo, tambien puedes agregar de 1 a la vez.</p>
+                <code class="codeExaple">git add -A</code>
             </div>
-
-            <h2>git commit</h2>
-            <p>Hace commit a los archivos que indiquemos, de esta manera quedan guardados nuestras modificaciones,
-                se debe que aclarar que para poder guardar nuestros cambios se debe dejar un
-                <strong>comentario</strong>, acontinuacion un ejemplo.</p>
-            <div class="codeExample">
-                <code>git commit -m "mensaje" </code>
+            <div class="hijo">
+                <h2>git commit</h2>
+                <p>Hace commit a los archivos que indiquemos, de esta manera quedan guardados nuestras modificaciones,
+                    se debe que aclarar que para poder guardar nuestros cambios se debe dejar un
+                    <strong>comentario</strong>, acontinuacion un ejemplo.</p>
+                <code class="codeExaple">git commit -m "mensaje" </code>
             </div>
-
-            <h2>Git checkout</h2>
-            <p>Crea un nuevo branch y automaticamente GIT se cambia al branch creado, clonando el branch desde donde
-                ejecutamos el comando.</p>
-            <div class="codeExample">
-                <code>git checkout -b "Nombre Del Branch"</code>
+            <div class="hijo">
+                <h2>Git checkout</h2>
+                <p>Crea un nuevo branch y automaticamente GIT se cambia al branch creado, clonando el branch desde donde
+                    ejecutamos el comando.</p>
+                <code class="codeExaple">git checkout -b "Nombre Del Branch"</code>
             </div>
-
-            <h2>Git branch</h2>
-            <p>Nos muestra una lista de los branches que existen en nuestro repositorio. </p>
-            <div class="codeExample">
-                <code>git branch</code>
+            <div class="hijo">
+                <h2>Git branch</h2>
+                <p>Nos muestra una lista de los branches que existen en nuestro repositorio. </p>
+                <code class="codeExaple">git branch</code>
             </div>
-
-            <h2>Git checkout</h2>
-            <p>Sirve para moverse entre branches, en este caso vamos al branch que indicamos en el comando.</p>
-            <div class="codeExample">
-                <code>git checkout "Nombre Del Branch"</code>
+            <div class="hijo">
+                <h2>Git checkout</h2>
+                <p>Sirve para moverse entre branches, en este caso vamos al branch que indicamos en el comando.</p>
+                <code class="codeExaple">git checkout "Nombre Del Branch"</code>
             </div>
-
-            <h2>Git status</h2>
-            <p>Nos indica el estado del repositorio, por ejemplo cuales están modificados, cuales no están siendo
-                seguidos por GIT, entre otras características.</p>
-            <div class="codeExample">
-                <code>git status</code>
+            <div class="hijo">
+                <h2>Git status</h2>
+                <p>Nos indica el estado del repositorio, por ejemplo cuales están modificados, cuales no están siendo
+                    seguidos por GIT, entre otras características.</p>
+                <code class="codeExaple">git status</code>
             </div>
-
-            <h2>Git push </h2>
-            <p>Luego de que hicimos un git commit, si estamos trabajando remotamente, este comando va a subir los
-                archivos al repositorio remoto, específicamente al branch que indiquemos.</p>
-            <div class="codeExample">
-                <code>git push origin "Nombre del Branch"</code>
+            <div class="hijo">
+                <h2>Git push </h2>
+                <p>Luego de que hicimos un git commit, si estamos trabajando remotamente, este comando va a subir los
+                    archivos al repositorio remoto, específicamente al branch que indiquemos.</p>
+                <code class="codeExaple">git push origin "Nombre del Branch"</code>
             </div>
-
-            <h2>Git pull</h2>
-            <p>Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando</p>
-            <div class="codeExample">
-                <code>git pull origin "Nombre Del Branch"</code>
+            <div class="hijo">
+                <h2>Git pull</h2>
+                <p>Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando
+                </p>
+                <code class="codeExaple">git pull origin "Nombre Del Branch"</code>
             </div>
         </div>
     </main>
