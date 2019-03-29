@@ -1,56 +1,73 @@
-.parr   {
+*{
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.parr {
     background-color: rgba(210, 214, 213, 0.192);
     border-radius: 10px;
     text-align: center;
     padding: 10px;
-    margin-left: 10px; 
+    margin: 40px 0 40px 0;
 }
 
 h1 {
     border-style: solid;
-    border-radius: 20px;
     margin: auto;
+    padding: 3px 15px 3px 15px;
     text-align: center;
-    width:300px;
+    width: fit-content;
+    word-break: keep-all;
+    /*con estas 3 lineas lo que hacemos es solucionar incompatibilidad del bordes-radius en navegador explorer, mozilla, chrome*/
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
 }
 
-.logo{
-    float:left;
+h2{
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.logo {
+    float: left;
     margin: auto;
     height: 55px;
 }
 
-code{
+code {
     color: rgba(47, 47, 235, 0.829);
 }
+
 .codeExaple::before {
-    content:"$";
+    content: "$";
     display: inline;
     background-color: black;
-    color: white; 
+    color: white;
 }
 
 a {
     color: white;
     font-weight: bold;
 }
-      
+
 a:visited {
     color: white;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover, a:active, a:focus {
     color: gray;
     text-decoration: none;
 }
 
-body{
-    font-family:robotoregular;
+body {
+    font-family: robotoregular;
     margin: 0px;
 }
-header{
+
+header {
     margin: 20px;
 }
 
@@ -58,50 +75,56 @@ header{
     border: 1px;
     border-style: solid;
 }
+
 main {
     margin: 0 auto;
-    width : 80%;
+    width: 80%;
 }
 
-footer{
+footer {
     background-color: black;
-    padding:20px 50px;
+    padding: 20px 50px;
     text-align: right;
     height: 45px;
     color: white;
 }
 
-.container{
-    padding:25px 0 70px 0;
-    width: 95%;
-    margin: 0;
-    display:flex;
-    flex-direction: column;
+.container {
+    padding: 25px 0 70px 0;
+    display: flex;
+    flex-direction:column;
     align-items: baseline;
 }
 
-.hijo{
-   width:auto;
-   height: auto;
-   margin:2px 0;
-   padding: 10px;
-   text-align: left;
-   word-break: break-word;
-}
-
-.desc{
-    margin: 0;
-}
-
-.subt{
-    background-color: rgba(31, 197, 81, 0.788);
-    width: 140px;
-    border-radius: 10px;
-    padding: 0 10px 0 10px;
-    color:white;
+.hijo {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10;
+    text-align: left;
     word-break: break-word;
 }
 
-.fbits{
+.desc {
+    margin: 0;
+}
+
+.subt {
+    background-color: rgba(31, 197, 81, 0.795);
+    width: fit-content;
+    border-radius: 10px 10px 10px 0;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    word-break: break-word;
+    margin: 20px 0 10px 0;
+}
+
+.fbits {
     display: block;
+}
+
+address{
+    font-size: 15px;
 }
