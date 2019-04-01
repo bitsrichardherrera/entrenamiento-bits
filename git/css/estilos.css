@@ -47,10 +47,21 @@ h1 {
     padding: 10px 15px;
     display:block;
     background: #00e676;
+    }
+
+.buton::before {
+    content: "| ";
+    color: white;
+}
+
+.buton:hover::before{
+    content: "| ";
+    color: #00e676;
 }
 /*agregando color a todo dentro del menu*/
 .menu li a:hover{
-    background-color:gray;
+    background-color:white;
+    color:#00e676;
 }
 /* organizar menu */
 .menu li{
@@ -60,7 +71,7 @@ h1 {
 .menu li ul {
     display:none;
     position: absolute;
-    width: 140px;
+    width:fit-content;
 }
 /*se indica que los subtemas del menu aparescan al pasar el mouse*/
 .menu li:hover > ul{
