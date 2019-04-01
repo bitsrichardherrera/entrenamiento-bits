@@ -8,7 +8,7 @@ head {
     display: none;
 }
 
-header{
+header {
     background: #00e676;
     width: 100%;
     max-width: 100%;
@@ -19,8 +19,7 @@ header{
 }
 
 .logo {
-    float: left;
-    height:43px;
+    height: 43px;
 }
 
 h1 {
@@ -35,32 +34,41 @@ h1 {
     padding: 30px 0 30px 0;
     background-color: #00e676;
 }
+
 .befo::before {
     content: "| ";
     color: white;
 }
 
-.menu{
-    display: flex;
-    width: 12rem;
+/* estilos del menu */
+.menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 15px;
+    display:block;
+    background: #00e676;
 }
-
-.menu > li > ul {
-display: none;
-position: absolute;
+/*agregando color a todo dentro del menu*/
+.menu li a:hover{
+    background-color:gray;
 }
-
-.menu > li{
-    margin: 10px;
+/* organizar menu */
+.menu li{
+    float: left;
 }
-
+/*desaparecer submenus, restringir tamaño*/
+.menu li ul {
+    display:none;
+    position: absolute;
+    width: 140px;
+}
+/*se indica que los subtemas del menu aparescan al pasar el mouse*/
 .menu li:hover > ul{
-    display: block;
-    width: 100%;
-    justify-content: left;
+    display:block;
 }
 
 /*desde aqui comienza el contenido*/
+
 h2 {
     text-align: left;
     font-weight: bold;
@@ -152,16 +160,16 @@ address {
     font-size: 15px;
 }
 
-a {
+.fot {
     color: white;
     font-weight: bold;
 }
 
-a:visited {
+.fot:visited {
     color: white;
 }
 
-a:hover, a:active, a:focus {
+.fot:hover, a:active, a:focus {
     color: gray;
     text-decoration: none;
 }
