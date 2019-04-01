@@ -15,7 +15,10 @@ header {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
@@ -41,41 +44,58 @@ h1 {
 }
 
 /* estilos del menu */
-.menu li a{
+
+.menu li a {
     text-decoration: none;
-    color:white;
+    color: white;
     padding: 10px 15px;
-    display:block;
+    display: block;
     background: #00e676;
-    }
+}
+
+.buton{
+    width: 105px;
+}
 
 .buton::before {
     content: "| ";
     color: white;
 }
 
-.buton:hover::before{
+.buton:hover::before {
     content: "| ";
     color: #00e676;
 }
-/*agregando color a todo dentro del menu*/
-.menu li a:hover{
-    background-color:white;
-    color:#00e676;
+
+.menu {
+    width: 30rem;
 }
+
+/*agregando color a todo dentro del menu*/
+
+.menu li a:hover {
+    background-color: white;
+    color: #00e676;
+}
+
 /* organizar menu */
-.menu li{
+
+.menu li {
     float: left;
 }
+
 /*desaparecer submenus, restringir tamaño*/
+
 .menu li ul {
-    display:none;
+    display: none;
     position: absolute;
-    width:fit-content;
+    width: fit-content;
 }
+
 /*se indica que los subtemas del menu aparescan al pasar el mouse*/
-.menu li:hover > ul{
-    display:block;
+
+.menu li:hover>ul {
+    display: block;
 }
 
 /*desde aqui comienza el contenido*/
@@ -172,6 +192,7 @@ address {
 }
 
 .fot {
+    text-decoration: none;
     color: white;
     font-weight: bold;
 }
