@@ -8,28 +8,56 @@ head {
     display: none;
 }
 
-.templ {
-    margin: 0;
-    padding: 30px 0 30px 0;
-    background-color: #00e676;
-}
-.templ::before {
-    content: "| ";
-    color: white;
+header{
+    background: #00e676;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .logo {
     float: left;
-    margin: auto;
     height:43px;
 }
 
 h1 {
-    padding: 0;
-    text-align: center;
     word-break: keep-all;
     display: block;
     color: white;
+}
+
+.befo {
+    text-align: left;
+    margin: 0;
+    padding: 30px 0 30px 0;
+    background-color: #00e676;
+}
+.befo::before {
+    content: "| ";
+    color: white;
+}
+
+.menu{
+    display: flex;
+    width: 12rem;
+}
+
+.menu > li > ul {
+display: none;
+position: absolute;
+}
+
+.menu > li{
+    margin: 10px;
+}
+
+.menu li:hover > ul{
+    display: block;
+    width: 100%;
+    justify-content: left;
 }
 
 /*desde aqui comienza el contenido*/
